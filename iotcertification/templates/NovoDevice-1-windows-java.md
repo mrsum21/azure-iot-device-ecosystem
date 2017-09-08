@@ -1,10 +1,10 @@
 ---
-platform: {enter the OS name running on device}
-device: {enter your device name here}
+platform: Windows
+device: NovoSkeleton-1
 language: java
 ---
 
-Run a simple JAVA sample on {enter your device name here} device running {enter the OS name running on device}
+Run a simple JAVA sample on NovoSkeleton-1 device running Windows
 ===
 ---
 
@@ -16,19 +16,13 @@ Run a simple JAVA sample on {enter your device name here} device running {enter 
 -   [Step 3: Build and Run the Sample](#Build)
 -   [Next Steps](#NextSteps)
 
-# Instructions for using this template
-
--   Replace the text in {placeholders} with correct values.
--   Delete the lines {{enclosed}} after following the instructions enclosed between them.
--   It is advisable to use external links, wherever possible.
--   Remove this section from final document.
 
 <a name="Introduction"/>
 # Introduction
 
 **About this document**
 
-This document describes how to connect {enter your device name here} device running {enter the OS name running on device} with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect NovoSkeleton-1 device running Windows with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -41,15 +35,16 @@ You should have the following items ready before beginning the process:
 -   [Prepare your development environment][setup-devbox-windows]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   {enter your device name here} device.
--   {{Please specify if any other software(s) or hardware(s) are required.}}
+-   NovoSkeleton-1 device.
+
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
--   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
+-  NovoSkeleton-1 device running Windows OS, you should only prepare the softwares in Step 1.
 
 <a name="Build"></a>
 # Step 3: Build SDK and Run the sample
+
 
 <a name="Step_3_1"/>
 ## 3.1 Install Azure IoT Device SDK and prerequisites on device
@@ -115,11 +110,7 @@ Using Maven 3 is the recommended way to install Azure IoT device SDK for Java.
         cd /azure-iot-sdk-java/device/samples/send-event/target
 
 -   Run the sample by issuing following command.
-{{Keep the command set based on your protocol(s) and remove the rest.}}
 
-    {{**If using AMQPS protocol:**}}
-
-        java -jar ./send-event-{version}-with-deps.jar "{connection string}" "{number of requests to send}" "amqps"
     
     {{**If using HTTPS protocol:**}}
 
@@ -145,10 +136,6 @@ Using Maven 3 is the recommended way to install Azure IoT device SDK for Java.
         cd /azure-iot-sdk-java/device/samples/handle-messages/target
      
 -   Run the sample by issuing following command.
-
-    {{**If using AMQPS protocol:**}}
-   
-        java -jar ./handle-messages-{version}-with-deps.jar "{connection string}" "amqps"
     
     {{**If using HTTPS protocol:**}}
    
